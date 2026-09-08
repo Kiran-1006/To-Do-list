@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 228, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container{
+    background-color: rgb(255, 228, 196);
+    width: 400px;
+    border: 2px solid #e67dd8cb;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(229, 160, 198);
+}
+ h1{
+    text-align: center;
+}
+.inputbox{
+    display: flex;
+    gap: 20px;
+}
+input{
+    padding: 5px;
+    flex: 1;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid burlywood;
+}
+button{
+    padding: 10px 15px;
+    background-color: rgb(33, 201, 33);
+    color: rgb(246, 240, 240);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(158, 255, 12);
+    color: black;
+    box-shadow: 0 0 10px green;
+}
+ul{
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+li{
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:beige;
+    border-radius: 10px;
+    border: 1px solid burlywood;
+}
+.delete{
+    background-color: rgb(241, 80, 80);
+    padding: 8px 10px;
+}
+.delete:hover{
+    background-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+@media screen and (max-width: 500px) {
+    .inputbox {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .inputbox input,
+    .inputbox button {
+        width: 100%;
+    }
+}
+        
+    
